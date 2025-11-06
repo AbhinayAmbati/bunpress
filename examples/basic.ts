@@ -1,10 +1,13 @@
 import { Bunpress } from "../src";
 
+import { notFound } from "../src/middleware/notFound";
+
 const app = new Bunpress();
 
 app.use(async (req, next) => {
-  console.log("Request:", req.method, req.url);
-  return await next();
+  const res = await next();
+
+  return res || notFound(req);
 });
 
 
