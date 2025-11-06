@@ -1,0 +1,17 @@
+{
+  "name": "bunpress",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+
+  "author": "Abhinay Ambati",
+  "license": "MIT",
+  "repository": "https://github.com/AbhinayAmbati/bunpress.git"
+}
