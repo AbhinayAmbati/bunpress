@@ -1,6 +1,6 @@
 {
   "name": "@bunpressjs/bunpress",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "⚡ Lightweight Express-style web framework built for the Bun runtime.",
   "type": "module",
   "main": "dist/index.js",
@@ -24,7 +24,7 @@
     "server"
   ],
   "author": "Abhinay Ambati",
-  "mail" : "abhinayambati4@gmail.com",
+  "mail": "abhinayambati4@gmail.com",
   "license": "MIT",
   "repository": {
     "type": "git",
