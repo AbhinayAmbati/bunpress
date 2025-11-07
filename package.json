@@ -1,6 +1,6 @@
 {
   "name": "@bunpressjs/bunpress",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "⚡ Lightweight Express-style web framework built for the Bun runtime.",
   "type": "module",
   "main": "dist/index.js",
