@@ -1,17 +1,37 @@
 {
-  "name": "bunpress",
-  "module": "src/index.ts",
+  "name": "@bunpressjs/bunpress",
+  "version": "0.1.0",
+  "description": "⚡ Lightweight Express-style web framework built for the Bun runtime.",
   "type": "module",
-  "private": true,
-  
-  "devDependencies": {
-    "@types/bun": "latest"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "bun run examples/errors.ts",
+    "build": "tsc",
+    "test": "bun test"
   },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "bun",
+    "framework",
+    "express",
+    "middleware",
+    "router",
+    "server"
+  ],
   "author": "Abhinay Ambati",
+  "mail" : "abhinayambati4@gmail.com",
   "license": "MIT",
-  "repository": "https://github.com/AbhinayAmbati/bunpress.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunpressjs/bunpress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bunpressjs/bunpress/issues"
+  },
+  "homepage": "https://github.com/bunpressjs/bunpress#readme"
 }
