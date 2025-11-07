@@ -15,6 +15,7 @@ export class Router {
 
   add(method: string, path: string, handler: (req: Request, res: BunResponse) => Response | Promise<Response>) {
     const keys: string[] = [];
+    method = method.toUpperCase(); // ✅ normalize method
 
     // ✅ Special case for root "/"
     if (path === "/") {
@@ -43,6 +44,8 @@ export class Router {
   }
 
   match(method: string, pathname: string): RouteMatch | null {
+    method = method.toUpperCase(); // ✅ normalize incoming method
+
     for (const route of this.routes) {
       if (route.method !== method) continue;
       const match = route.regex.exec(pathname);
